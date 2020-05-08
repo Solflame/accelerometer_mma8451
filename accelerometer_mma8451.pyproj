@@ -5,7 +5,7 @@
     <ProjectGuid>e84800e8-f500-4930-9966-e93d925160ca</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>accelerometer_mma8451.py</StartupFile>
+    <StartupFile>accel.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,7 +23,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="accel.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="accelerometer_mma8451.py" />
+    <Compile Include="accel_config.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

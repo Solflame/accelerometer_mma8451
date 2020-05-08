@@ -1,10 +1,14 @@
-#!/user/bin/env python
+#!/user/bin/env python3
 
 import time
+import datetime
+import os
+import sys
+import logging
+import threading
 
 import board
 import busio
-
 
 import adafruit_mma8451
 

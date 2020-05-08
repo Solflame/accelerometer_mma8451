@@ -1,7 +1,10 @@
+#!/user/bin/env python
+
 import time
 
 import board
 import busio
+
 
 import adafruit_mma8451
 
@@ -29,3 +32,5 @@ while True:
     #print("Acceleration: x={0:0.3f}m/s^2 y={1:0.3f}m/s^2 z={2:0.3f}m/s^2".format(x, y, z))
 
     time.sleep(1.0)
+
+    sys.exit()
